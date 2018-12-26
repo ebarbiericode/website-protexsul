@@ -1,7 +1,10 @@
 var gulp = require('gulp');
+var postcss = require('gulp-postcss');
 var browserSync = require('browser-sync').create();
 var pkg = require('./package.json');
+var autoprefixer = require('gulp-autoprefixer');
 var watch = require('gulp-watch');
+var nested = require('postcss-nested');
 // Copy third party libraries from /node_modules into /vendor
 gulp.task('vendor', function() {
 
@@ -41,9 +44,36 @@ gulp.task('dev', ['browserSync'], function() {
 });
 
 
-gulp.task('watch', function(){
-    watch('./index.html', function() {
-      // body omitted
-      gulp.start('html')
-    });
-})
+gulp.task('watch', function() {
+
+  browserSync.init({
+    notify: false,
+    server: {
+      baseDir: "./"
+    }
+  });
+
+  watch('./*.html', function() {
+    browserSync.reload();
+  });
+
+  watch('./css/**/*.css', function() {
+    gulp.start('cssInject');
+  });
+
+});
+
+gulp.task('styles', function() {
+  return gulp.src('./css/style.css')
+    .pipe(postcss([nested, autoprefixer]))
+    .on('error', function(errorInfo) {
+      console.log(errorInfo.toString());
+      this.emit('end');
+    })
+    .pipe(gulp.dest('./css/temp/styles'));
+});
+
+gulp.task('cssInject', ['styles'], function() {
+  return gulp.src('./css/temp/styles.css')
+    .pipe(browserSync.stream());
+});

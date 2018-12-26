@@ -53,43 +53,52 @@
     <header>
 
       <div id="hero-product" class="hero-product__img">
-        <picture>
-          <source srcset="./img/hero_products_lg.jpeg" media="(min-width:1380px" class="img-fluid">
-          <source srcset="./img/hero_products_md.jpeg" media="(min-width:990px" class="img-fluid">
-          <source srcset="./img/hero_products_sm.jpeg" media="(min-width:640px)">
-          <img src="./img/hero_products_xs.jpeg" class="img-fluid">
-        </picture>
-        
+      	<picture>
+      		<source srcset="./img/hero_mista_lg.jpeg" media="(min-width:1380px" class="img-fluid">
+      		<source srcset="./img/hero_mista_md.jpeg" media="(min-width:990px" class="img-fluid">
+      		<source srcset="./img/hero_mista_sm.jpeg" media="(min-width:640px)">
+      		<img src="./img/hero_mista_xs.jpeg" class="img-fluid">
+      	</picture>
+      	
+      	<span class="hero-product__text media my-4">
+      		<p>--Nossos produtos-- <br>
+      			Luvas Mista / Luvas de Vaqueta
+      		</p>
+      	</span>
       </div>
     </header>
 
     <!-- Page Content -->
+      <!-- Page Heading/Breadcrumbs -->
+      <hr>
+      <ol class="breadcrumb mt-4">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">
+        	<a href="products.html">Produtos</a>
+    	</li>
+        <li class="breadcrumb-item">Mista - Vaquetas</li>
+      </ol>
+      <hr>
+    <section id="product_container">
+      <div class="container">
+	     <div class="row">
+	        
+	        <div class="col-lg-6 col-sm-6 col-xs-2 mb-4 img-fluid">
+	          <div class="card h-100 product__title">
+	            <a href="#"><img class="card-img-top img-fluid" src="./img/produtos/211243.jpg" alt=""><h5>Luva Mista</h5></a>
+	          </div>
+	        </div>
 
-    <section id="raspa" class="caixa1"><!-- Inicio da seção LuvasRaspa -->
-      <div class="container-fluid">
-        <h2>Produtos</h2>
-        <div class="row section">
-          <div class="col-md-4">
-            <img src="./img/1145434.jpeg" class="img-fluid">
-            <h1 class="product1__text-content">Luvas Raspa</h1>
-            <a class="btn btn-primary product1__btn" href="product_raspa.html">Ver produtos</a>
-          </div>
+	        <div class="col-lg-6 col-sm-6 col-xs-2 mb-4 img-fluid">
+	          <div class="card h-100 product__title">
+	            <a href="#"><img class="card-img-top img-fluid" src="./img/produtos/211246.jpg" alt=""><h5>Luva vaqueta petroleira</h5></a>
+	          </div>
+	        </div>
 
-          <div class="col-md-4">
-            <img src="./img/585418.jpeg" class="img-fluid">
-            <h1 class="product1__text-content">Luvas Mista / Vaqueta</h1>
-            <a class="btn btn-primary product1__btn" href="product_mista.html">Ver produtos</a>
-          </div>
+	     </div>
 
-          <div class="col-md-4">
-            <img src="./img/1474993.jpeg" class="img-fluid">
-            <h1 class="product1__text-content">Vestimentas</h1>
-            <a class="btn btn-primary product1__btn" href="product_avental.html">Ver produtos</a>
-          </div>
-      </div>
-    </section><!-- Fim da seção luvasRaspa -->
-
-      <!-- /.row -->
 
       <hr>
 
@@ -151,6 +160,7 @@
     <script src="./js/app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
   </body>
 
 </html>

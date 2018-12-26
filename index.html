@@ -10,8 +10,8 @@
 
     <title>Protexsul</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -51,20 +51,22 @@
     </nav>
 
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+      <div id="carouselHome" class="carousel slide mt-3" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselHome" data-slide-to="1"></li>
+          <li data-target="#carouselHome" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('./img/slider1.jpg')">
+          <div class="carousel-item active" style="background-image: url('./img/1474993.jpeg')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Qualidade</h3>
               <p>Nossos produtos tem qualidade certificada.</p>
             </div>
           </div>
+
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item" style="background-image: url('./img/slider2.jpg')">
             <div class="carousel-caption d-none d-md-block">
@@ -76,116 +78,157 @@
           <div class="carousel-item" style="background-image: url('./img/slider3.jpg')">
             <div class="carousel-caption d-none d-md-block">
               <h3>Segurança</h3>
-              <p>Segurança para os trabalhadores.</p>
+              <p>Mais segurança para desenvolver seus trabalhos.</p>
             </div>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
 
         <hr class="barra anima">
       </div>
+
     </header>
 
     <!-- Page Content -->
-    <div class="container">
 
-      <h1 class="my-4">Bem vindo a Protexsul</h1>
+    <section id="qualidade">
+      <div class="container">
+        <h1 class="text-center my-4">Bem vindo a Protexsul</h1>
 
-      <!-- Marketing Icons Section -->
-      <div class="row">
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Qualidade</h4>
-            <div class="card-body">
-              <p class="card-text">Produtos e equipamentos que atendem as legislações vigentes de segurança, aplicada a diversos segmentos, tais como: construção civil, indústria alimentícia, entre outros.</p>
+        <!-- Marketing Icons Section -->
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="caixa">
+              <div class="alinha_icons">
+                <i class="fas fa-certificate fa-2x">              
+                  <h4>
+                    <b>Qualidade</b>
+                  </h4>
+                </i> 
+              </div>
+                <p class="qualidade__card">Produtos e equipamentos que atendem as legislações vigentes de segurança, aplicada a diversos segmentos, tais como: construção civil, indústria alimentícia, entre outros.</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Confiabilidade</h4>
-            <div class="card-body">
-              <p class="card-text">Com fábrica em Chapecó-SC, a Protexsul atua no setor de segurança do trabalho, fabricando equipamentos para clientes renomados, sendo especializada no desenvolvimento de soluções completas em luvas e aventais.</p>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="caixa">
+              <div class="alinha_icons">
+                <i class="fas fa-hands-helping fa-2x"></i>             
+                  <h4>
+                    <b>Confiabilidade</b>
+                  </h4>
+                </i> 
+              </div>
+                <p class="qualidade__card">Com fábrica em Chapecó-SC, a Protexsul atua no setor de segurança do trabalho, fabricando equipamentos para clientes renomados, sendo especializada no desenvolvimento de soluções completas em produtos de raspa e vaquetas em geral.</p>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-          <div class="card h-100">
-            <h4 class="card-header">Segurança</h4>
-            <div class="card-body">
-              <p class="card-text">Os produtos são produzidos sob altos padrões de qualidade, para atender as suas necessidades. Possuimos profissionais preparados para lhe atender prontamente buscando sanar suas dúvidas e indicar os melhores EPI’s para sua empresa.</p>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-4">
+            <div class="caixa">
+              <div class="alinha_icons">
+                <i class="fas fa-shield-alt fa-2x"></i>           
+                  <h4>
+                    <b>Proteção</b>
+                  </h4>
+                </i> 
+              </div>
+                <p class="qualidade__card">Os produtos são produzidos sob altos padrões de qualidade, para atender as suas necessidades. Possuimos profissionais preparados para lhe atender prontamente buscando sanar suas dúvidas e indicar os melhores EPI’s para sua empresa.</p>
+            </div>
+          </div>
+        </div>   
+      </div>   
+    </section>
+    <hr>
+    <section id="raspa" class="caixa1"><!-- Inicio da seção LuvasRaspa -->
+      <div class="container-fluid">
+        <h2>Produtos</h2>
+        <div class="row section">
+          <div class="col-md-6">
+            <img src="./img/1145434.jpeg" class="img-fluid">
+            <h1 class="product1__text-content">Luvas Raspa</h1>
+            <a class="btn btn-primary product1__btn" href="product_raspa.html">Ver produtos</a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4 d-flex">
+              <div class="row">
+              <div class="col-lg-4 product__img">
+                <a href="#"><img class="card-img-top img-fluid" src="./img/produtos/tratadas/SDC14428.png" alt=""></a>
+              </div>
+              <div class="col-lg-8">
+                  <h4 class="product__information">
+                    Luva Raspa
+                  </h4>
+                  <p class="product__information">
+                    A Luva de Raspa Protexsul é usada para proteger as mãos de agentes escoriantes, cortantes, abrasivos, trabalhos com solda, carga, carpintaria, agricultura, qualquer tipo de trabalho onde se possa ter perigo para as mãos as Luvas de Raspa são utilizadas. São produzidas com cuidado para maior durabilidade, maciez e reforço para maior conforto e segurança. 
+                  </p>   
+                  <a href="" class="product__information"><h6>[+] Saiba Mais</h6></a>            
+              </div>                
             </div>
           </div>
         </div>
       </div>
-      <!-- /.row -->
-
-      <!-- Portfolio Section -->
-      <h2>Nosso Portifólio</h2>
-
-      <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="./img/luvas/211243.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#" class="portifolio">Luva Mista</a>
-              </h4>
-              <p class="card-text">
-                <ul>
-                  <li>Reforço nas palmas e polegar e elástico no punho</li>
-                  <li>Etiqueta: cano 15cm – na mão direita</li>
-                </ul>
-              </p>
+    </section><!-- Fim da seção luvasRaspa -->
+    <hr>
+    <section id="vaqueta" class="caixa1"><!-- Inicio da seção Vaquetas -->
+      <div class="container-fluid
+      ">
+        <div class="row section">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4 d-flex">
+              <div class="row">
+              <div class="col-lg-8">
+                  <h4 class="product__information">
+                    Luva Vaqueta
+                  </h4>
+                  <p class="product__information">
+                    A Luva de Vaqueta Protexsul é muito resistente, é usada quando os trabalhos necessitam do uso do tato, como trabalhos em alturas elevadas onde se necessita fazer rapel, montar estruturas metálicas. 
+                  </p>   
+                  <a href="" class="product__information"><h6>[+] Saiba Mais</h6></a>            
+              </div>                
+              <div class="col-lg-4 product__img">
+                <a href="#"><img class="card-img-top img-fluid" src="./img/produtos/tratadas/211243.png" alt=""></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="./img/luvas/211246.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Luva vaqueta petroleira</a>
-              </h4>
-              <p class="card-text">
-                <ul>
-                  <li>Chapa: cano 15cm sem reforço</li>
-                  <li>Palma de vaqueta com reforço da Pepa</li>
-                  <li>Meia luva de vaqueta</li>
-                  <li>Dedo dorso e cano – de raspa</li>
-                  <li>Linha branca</li>
-                  <li>Etiqueta da mista – na mão direita</li>
-                </ul>
-              </p>
-            </div>
+          <div class="col-md-6">
+            <img src="./img/585418.jpeg" class="img-fluid">
+            <h1 class="product1__text-content">Luvas Vaqueta</h1>
+            <a class="btn btn-primary product1__btn" href="product_mista.html">Ver produtos</a>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-          <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="./img/SDC14466.jpg" alt=""></a>
-            <div class="card-body">
-              <h4 class="card-title">
-                <a href="#">Avental com Mangas Barbeiro</a>
-              </h4>
-              <p class="card-text">
-               <ul>
-                  <li>Linha amarela</li>
-                  <li>Etiqueta no ombro</li>
-                  <li>Proteção do usuário contra agentes abrasivos, escoriantes e respingos de solda.</li>
-                </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-        <a href="products.html">Conheça nossos produtos...</a>
       </div>
+    </section><!-- Fim da seção luvasVaqueta -->
+    <hr>
+    <section id="avental" class="caixa1"><!-- Inicio da seção avental -->
+      <div class="container-fluid">
+        <div class="row section">
+          <div class="col-md-6">
+            <img src="./img/1474993.jpeg" class="img-fluid">
+            <h1 class="product1__text-content">Aventais</h1>
+            <a class="btn btn-primary product1__btn" href="product_avental.html">Ver produtos</a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-4 d-flex">
+              <div class="row">
+              <div class="col-lg-4 product__img">
+                <a href="#"><img class="card-img-top img-fluid" src="./img/produtos/tratadas/SDC14466.png" alt=""></a>
+              </div>
+              <div class="col-lg-8">
+                  <h4 class="product__information">
+                    Vestimentas e acessórios
+                  </h4>
+                  <p class="product__information">
+                    Ventimentas que proporcionam ao usuário a segurança adequada nas atividades que envolvam algum risco de respingo de materiais em fusão, agentes cortantes, agentes escoriantes e durante operações de solda. 
+                  </p>   
+                  <a href="" class="product__information"><h6>[+] Saiba Mais</h6></a>            
+              </div>                
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Fim da seção luvasRaspa -->
 
       <!-- /.row -->
 
@@ -197,29 +240,58 @@
           <p></p>
         </div>
         <div class="col-md-4">
-          <a class="btn btn-lg btn-warning btn-block" href="http://www.mercadolivre.com.br">
-          <i class="fas fa-shopping-cart"></i>
-          Loja no Mercado Livre</a>
-
+          <a class="btn btn-lg btn-warning btn-block" id="btn-mercadoLivre" href="https://www.mercadolivre.com.br">
+          <i class="fas fa-shopping-cart btn-ml"></i>
+          <span class="btn-ml">Loja no Mercado Livre</a></span>
         </div>
       </div>
 
     </div>
-    <!-- /.container -->
+    <!-- /.container -->      
+    </section>
+    
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-light">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; elisandro.barbieri@gmail.com</p>
+        <div class="row">
+        <div class="col md-2 img-rodape d-none d-sm-block">
+            <img src="./img/logo_grande_rec.png" class="img-fluid d-none d-sm-block">
+        </div>
+        <div class="text-dark col md-6">
+          <p>
+            <i class="fas fa-map-marker-alt">
+              R. Martinho Lutero, 332 - São Cristóvão, Chapecó - SC, 89804-010
+            </i>
+            
+          </p>
+          <p>
+            <i class="fab fa-whatsapp icone_fonte">
+              (49) 9 9964-0997  | (49) 9 8817-8216
+            </i>
+          </p>
+          <p>
+            <i class="fas fa-envelope">
+              <a href="mailto:contato@protexsul.com.br"> contato@protexsul.com.br</a>
+            </i>       
+          </p>
+          <p>
+            <i class="fas fa-clock"> 
+              Segunda - Sexta: 8:00 às 12:00 | 13:15 às 18:00
+            </i>
+          </p>
+        </div>
       </div>
+    </div>
       <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/app.js"></script>
 
+    <script src="./node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   </body>
 
 </html>
